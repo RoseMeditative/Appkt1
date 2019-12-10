@@ -10,8 +10,8 @@ import com.example.appkt1.databinding.RecyclerviewDrinkBinding
 
 
 class DrinksAdapter (
-    private val drinks: List<Drink>//,
-    //private val listener: RecyclerViewClickListener
+    private val drinks: List<Drink>,
+    private val listener: RecyclerViewClickListener
 ) : RecyclerView.Adapter<DrinksAdapter.DrinksViewHolder>(){
 
     override fun getItemCount() = drinks.size
@@ -28,12 +28,12 @@ class DrinksAdapter (
 
     override fun onBindViewHolder(holder: DrinksViewHolder, position: Int) {
         holder.recyclerviewDrinkBinding.drink = drinks[position]
-        /*holder.recyclerviewMovieBinding.buttonBook.setOnClickListener {
-            listener.onRecyclerViewItemClick(holder.recyclerviewMovieBinding.buttonBook, movies[position])
+        holder.recyclerviewDrinkBinding.buttonBook.setOnClickListener {
+            listener.onRecyclerViewItemClick(holder.recyclerviewDrinkBinding.buttonBook, drinks[position])
         }
-        holder.recyclerviewMovieBinding.layoutLike.setOnClickListener {
-            listener.onRecyclerViewItemClick(holder.recyclerviewMovieBinding.layoutLike, movies[position])
-        }*/
+        holder.recyclerviewDrinkBinding.layoutLike.setOnClickListener {
+            listener.onRecyclerViewItemClick(holder.recyclerviewDrinkBinding.layoutLike, drinks[position])
+        }
     }
 
 

@@ -27,9 +27,17 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="195dp">
-                    <!--app:image="@{movie.image}"-->
 
 
+                    <ImageView
+
+                        app:image="@{drink.image}"
+                        android:id="@+id/imageView"
+                        android:background="@drawable/captain_marvel"
+                        android:layout_width="match_parent"
+                        android:scaleType="matrix"
+                        android:layout_height="195dp"
+                        />
 
                     <TextView
                         android:visibility="@{drink.is_new == 0 ? View.INVISIBLE : View.VISIBLE}"

@@ -6,12 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.drinks_fragment.*
 
 
-class DrinksFragment : Fragment() {
+class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
 
     companion object {
         fun newInstance() = DrinksFragment()
@@ -42,11 +43,21 @@ class DrinksFragment : Fragment() {
             recycler_view_drinks.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
-                it.adapter = DrinksAdapter(drinks) //, this)
+                it.adapter = DrinksAdapter(drinks , this)
             }
         })
 
 
+    }
+    override fun onRecyclerViewItemClick(view: View, movie: Drink) {
+        when(view.id){
+            R.id.button_book -> {
+                Toast.makeText(requireContext(), "Book Button Clicked",Toast.LENGTH_LONG).show()
+            }
+            R.id.layout_like ->{
+                Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
 }
