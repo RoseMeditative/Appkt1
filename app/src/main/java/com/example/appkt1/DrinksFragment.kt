@@ -51,12 +51,14 @@ class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
     }
     override fun onRecyclerViewItemClick(view: View, movie: Drink) {
         when(view.id){
+            //GESTION DES BOUTONS
             R.id.button_book -> {
+                //AFFICHER LES DETAILS
                 Toast.makeText(requireContext(), "Book Button Clicked",Toast.LENGTH_LONG).show()
             }
-            R.id.layout_like ->{
-                Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()
-            }
+          //  R.id.layout_like ->{
+            //    Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()
+            //}
         }
     }
 

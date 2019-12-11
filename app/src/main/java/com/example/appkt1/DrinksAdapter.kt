@@ -31,9 +31,9 @@ class DrinksAdapter (
         holder.recyclerviewDrinkBinding.buttonBook.setOnClickListener {
             listener.onRecyclerViewItemClick(holder.recyclerviewDrinkBinding.buttonBook, drinks[position])
         }
-        holder.recyclerviewDrinkBinding.layoutLike.setOnClickListener {
+        /*holder.recyclerviewDrinkBinding.layoutLike.setOnClickListener {
             listener.onRecyclerViewItemClick(holder.recyclerviewDrinkBinding.layoutLike, drinks[position])
-        }
+        }*/
     }
 
 
