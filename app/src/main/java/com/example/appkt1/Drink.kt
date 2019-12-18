@@ -1,6 +1,9 @@
 package com.example.appkt1
 
-data class Drink(
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+data class Drink (
     val id: Int,
     val image: String,
     val is_new: Int,

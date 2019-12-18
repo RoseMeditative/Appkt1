@@ -1,5 +1,6 @@
 package com.example.appkt1
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -49,12 +50,18 @@ class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
 
 
     }
-    override fun onRecyclerViewItemClick(view: View, movie: Drink) {
+    override fun onRecyclerViewItemClick(view: View, drink: Drink) {
         when(view.id){
             //GESTION DES BOUTONS
+
+
             R.id.button_book -> {
                 //AFFICHER LES DETAILS
-                Toast.makeText(requireContext(), "Book Button Clicked",Toast.LENGTH_LONG).show()
+                val intent = Intent(activity,SecondActivity::class.java)
+                intent.putExtra("title",drink.title)
+
+                        startActivity(intent)
+               Toast.makeText(requireContext(), drink.title,Toast.LENGTH_LONG).show()
             }
           //  R.id.layout_like ->{
             //    Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()

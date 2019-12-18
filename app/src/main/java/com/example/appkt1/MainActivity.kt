@@ -17,11 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         val repository = DrinksRepository(DrinksApi())
 
-       /* GlobalScope.launch(Dispatchers.Main) {
 
-            val drinks = repository.getDrinks()
-            Toast.makeText(this@MainActivity,drinks.toString(),Toast.LENGTH_LONG).show()
-        }
-*/
     }
 }
