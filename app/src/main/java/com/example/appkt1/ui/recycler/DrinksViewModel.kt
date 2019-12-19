@@ -1,8 +1,11 @@
-package com.example.appkt1
+package com.example.appkt1.ui.recycler
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.appkt1.util.Coroutines
+import com.example.appkt1.Drink
+import com.example.appkt1.Data.DrinksRepository
 import kotlinx.coroutines.Job
 
 

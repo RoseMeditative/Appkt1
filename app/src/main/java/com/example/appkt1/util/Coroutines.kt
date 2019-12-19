@@ -1,4 +1,4 @@
-package com.example.appkt1
+package com.example.appkt1.util
 
     import kotlinx.coroutines.CoroutineScope
     import kotlinx.coroutines.Dispatchers

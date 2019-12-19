@@ -1,4 +1,4 @@
-package com.example.appkt1
+package com.example.appkt1.ui.recycler
 
 import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
@@ -10,10 +10,15 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.appkt1.*
+import com.example.appkt1.Activity.SecondActivity
+import com.example.appkt1.Drink
+import com.example.appkt1.Data.DrinksApi
+import com.example.appkt1.Data.DrinksRepository
 import kotlinx.android.synthetic.main.drinks_fragment.*
 
 
-class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
+class DrinksFragment : Fragment() , RecyclerViewClickListener {
 
     companion object {
         fun newInstance() = DrinksFragment()
@@ -44,7 +49,7 @@ class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
             recycler_view_drinks.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
-                it.adapter = DrinksAdapter(drinks , this)
+                it.adapter = DrinksAdapter(drinks, this)
             }
         })
 
@@ -57,7 +62,7 @@ class DrinksFragment : Fragment() ,RecyclerViewClickListener  {
 
             R.id.button_book -> {
                 //AFFICHER LES DETAILS
-                val intent = Intent(activity,SecondActivity::class.java)
+                val intent = Intent(activity, SecondActivity::class.java)
                 intent.putExtra("title",drink.title)
 
                         startActivity(intent)

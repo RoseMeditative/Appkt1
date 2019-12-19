@@ -1,12 +1,10 @@
-package com.example.appkt1
+package com.example.appkt1.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.appkt1.Data.DrinksApi
+import com.example.appkt1.Data.DrinksRepository
 import com.example.appkt1.R
-import android.widget.Toast
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 
 class MainActivity : AppCompatActivity() {

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/drinksFragment"
-        android:name="com.example.appkt1.DrinksFragment"
+        android:name="com.example.appkt1.ui.recycler.DrinksFragment"
         android:label="drinks_fragment"
         tools:layout="@layout/drinks_fragment" />
 </navigation>

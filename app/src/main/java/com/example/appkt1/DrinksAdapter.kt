@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appkt1.databinding.RecyclerviewDrinkBinding
+import com.example.appkt1.ui.recycler.RecyclerViewClickListener
 
 
 class DrinksAdapter (

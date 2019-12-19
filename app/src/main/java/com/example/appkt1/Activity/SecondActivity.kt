@@ -1,8 +1,9 @@
-package com.example.appkt1
+package com.example.appkt1.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.appkt1.R
 
 class SecondActivity : AppCompatActivity() {
 

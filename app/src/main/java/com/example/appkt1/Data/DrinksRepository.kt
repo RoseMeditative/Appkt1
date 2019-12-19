@@ -1,4 +1,4 @@
-package com.example.appkt1
+package com.example.appkt1.Data
 
 //***import package data/network****
 

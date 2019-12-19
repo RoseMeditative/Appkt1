@@ -1,4 +1,4 @@
-package com.example.appkt1
+package com.example.appkt1.Data
 
 import retrofit2.Response
 import java.io.IOException
