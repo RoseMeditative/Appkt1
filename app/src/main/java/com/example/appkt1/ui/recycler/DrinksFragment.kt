@@ -64,10 +64,21 @@ class DrinksFragment : Fragment() , RecyclerViewClickListener {
             R.id.button_book -> {
                 //AFFICHER LES DETAILS
                 val intent = Intent(activity, SecondActivity::class.java)
+                //val one = String()
                 intent.putExtra("title",drink.name)
+                intent.putExtra("capital",drink.capital)
+                intent.putExtra("region",drink.region)
+                intent.putExtra("subregion",drink.subregion)
+                intent.putExtra("population",drink.population)
+
+
+
+                intent.putExtra("lat",drink.latlng[0])
+                intent.putExtra("long",drink.latlng[1])
+
 
                         startActivity(intent)
-               Toast.makeText(requireContext(), drink.name,Toast.LENGTH_LONG).show()
+               Toast.makeText(requireContext()," Recherche d'informations ... ",Toast.LENGTH_LONG).show()
             }
           //  R.id.layout_like ->{
             //    Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()

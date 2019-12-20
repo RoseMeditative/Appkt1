@@ -18,6 +18,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
+
+        var intent = intent
+        val lat = intent.getStringExtra("lat")
+        val lng = intent.getStringExtra("lng")
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
@@ -34,6 +38,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
+
+
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera

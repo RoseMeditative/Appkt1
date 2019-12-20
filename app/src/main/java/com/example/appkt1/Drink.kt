@@ -7,7 +7,8 @@ data class Drink (
     val name: String,
     val capital: String,
     val region : String,
-    /*val subregion : String,
-    val population : String,*/
+    val latlng : Array<Double>,
+    val subregion : String,
+    val population : Int,
     val flag : String
 )
