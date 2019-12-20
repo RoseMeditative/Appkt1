@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/drinksFragment">
+
+
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.appkt1.ui.recycler.DrinksFragment"
+        android:label="drinks_fragment"
+        tools:layout="@layout/drinks_fragment" />
+</navigation>

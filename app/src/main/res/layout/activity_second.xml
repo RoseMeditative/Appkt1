@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="22dp"
+        android:background="@drawable/rounded_corner_card">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/countryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capital:"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/CapitalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="capital"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Région:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/RegionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="region"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Subrégion:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="160dp"
+                android:id="@+id/SubregionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="region"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Population:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="170dp"
+                android:id="@+id/PopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="region"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUVRIR DANS MAP" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
