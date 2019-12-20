@@ -22,8 +22,8 @@ class SecondActivity : AppCompatActivity() {
         val region = intent.getStringExtra("region")
         val subregion = intent.getStringExtra("subregion")
         val population = intent.getStringExtra("population")
-        val lat = intent.getStringExtra("lat")
-        val lng = intent.getStringExtra("lng")
+        val lat = intent.getDoubleExtra("lat",0.0)
+        val lng = intent.getDoubleExtra("lng",0.0)
 
         val mapBtn = findViewById<Button>(R.id.button)
 
@@ -51,6 +51,7 @@ class SecondActivity : AppCompatActivity() {
 
             intent.putExtra("lat",lat)
             intent.putExtra("lng",lng)
+
             startActivity(intent)
 
         }

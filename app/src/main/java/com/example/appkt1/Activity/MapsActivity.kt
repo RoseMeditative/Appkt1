@@ -2,6 +2,7 @@ package com.example.appkt1.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.appkt1.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -10,6 +11,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import java.lang.Double.parseDouble
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -19,9 +21,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
 
-        var intent = intent
-        val lat = intent.getStringExtra("lat")
-        val lng = intent.getStringExtra("lng")
+
+        //val lat = lati.toDouble()
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
@@ -40,10 +43,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
 
 
+       var intent = intent
+        val lati = intent.getDoubleExtra("lat",0.0)
+        val lngi = intent.getDoubleExtra("lng",0.0)
+
+
+
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
+        val sydney = LatLng(lati, lngi)
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }

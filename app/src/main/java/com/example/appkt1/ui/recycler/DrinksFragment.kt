@@ -73,6 +73,7 @@ class DrinksFragment : Fragment() , RecyclerViewClickListener {
 
 
 
+
                 intent.putExtra("lat",drink.latlng[0])
                 intent.putExtra("long",drink.latlng[1])
 
