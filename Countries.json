@@ -1,5 +1,7 @@
 [ 
-  {name: 'France', capital: 'Paris', region:'Europe', flag: 'https://gotanews.tv/wp-content/uploads/2019/11/France.jpg'},
-  {name: 'Expagne', capital: 'Barcrlone', region:'Europe', flag: 'https://gotanews.tv/wp-content/uploads/2019/11/France.jpg'},
-  {name: 'Angleterre', capital: 'Pre', region:'Europe', flag: 'https://gotanews.tv/wp-content/uploads/2019/11/France.jpg'}
+  {"name": "France", "capital": "Paris", "region":"Europe", "flag": "https://gotanews.tv/wp-content/uploads/2019/11/France.jpg"},
+  {"name": "France", "capital": "Paris", "region":"Europe", "flag": "https://gotanews.tv/wp-content/uploads/2019/11/France.jpg"},
+  {"name": "France", "capital": "Paris", "region":"Europe", "flag": "https://gotanews.tv/wp-content/uploads/2019/11/France.jpg"},
+  {"name": "France", "capital": "Paris", "region":"Europe", "flag": "https://gotanews.tv/wp-content/uploads/2019/11/France.jpg"},
+  {"name": "France", "capital": "Paris", "region":"Europe", "flag": "https://gotanews.tv/wp-content/uploads/2019/11/France.jpg"}
  ]
