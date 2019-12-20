@@ -3,11 +3,17 @@ package com.example.appkt1
 
 
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.ViewGroup
+import android.widget.SearchView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appkt1.databinding.RecyclerviewDrinkBinding
 import com.example.appkt1.ui.recycler.RecyclerViewClickListener
+
+
+
+
 
 
 class DrinksAdapter (
@@ -36,6 +42,7 @@ class DrinksAdapter (
             listener.onRecyclerViewItemClick(holder.recyclerviewDrinkBinding.layoutLike, drinks[position])
         }*/
     }
+
 
 
     inner class DrinksViewHolder(

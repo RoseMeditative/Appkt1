@@ -43,7 +43,7 @@
 
                     <ImageView
 
-                        app:image="@{drink.image}"
+                        app:flag="@{drink.flag}"
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:scaleType="matrix"
@@ -58,19 +58,19 @@
                             android:id="@+id/textViewTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{drink.title}"
+                            android:text="@{drink.name}"
                             android:textColor="#fff"
                             android:textSize="18sp"
-                            tools:text="Captain Marvel" />
+                            tools:text="Pays" />
 
                         <TextView
                             android:id="@+id/textViewLanguage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/textViewTitle"
-                            android:text="@{drink.language}"
+                            android:text="@{drink.region}"
                             android:textColor="#fff"
-                            tools:text="English" />
+                            tools:text="region" />
 
                         <Button
                             android:id="@+id/button_book"

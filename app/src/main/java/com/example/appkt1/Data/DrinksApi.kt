@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface DrinksApi {
 
-    @GET("movies")
+    @GET("all")
     suspend fun getDrinks() : Response<List<Drink>>
 
 
@@ -17,7 +17,7 @@ interface DrinksApi {
         operator fun invoke() : DrinksApi {
             return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://api.simplifiedcoding.in/course-apis/recyclerview/")
+                .baseUrl("https://restcountries.eu/rest/v2/")
                 .build()
                 .create(DrinksApi::class.java)
         }

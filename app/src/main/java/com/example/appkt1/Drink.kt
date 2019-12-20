@@ -4,13 +4,10 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 data class Drink (
-    val id: Int,
-    val image: String,
-    val is_new: Int,
-    val language: String,
-    val like_percent: Int,
-    val rating: String,
-    val title: String,
-    val type: String,
-    val vote_count: Int
+    val name: String,
+    val capital: String,
+    val region : String,
+    /*val subregion : String,
+    val population : String,*/
+    val flag : String
 )

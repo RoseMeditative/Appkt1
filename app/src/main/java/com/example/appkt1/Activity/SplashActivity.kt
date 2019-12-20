@@ -1,9 +1,9 @@
-package com.example.appkt1
+package com.example.appkt1.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.appkt1.Activity.MainActivity
+import com.example.appkt1.R
 import java.util.*
 
 class SplashActivity : AppCompatActivity() {
