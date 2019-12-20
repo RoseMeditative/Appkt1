@@ -78,7 +78,7 @@ class SecondActivity : AppCompatActivity() {
                 startActivity(intent)
                 Toast.makeText(requireContext()," Recherche d'informations ... ", Toast.LENGTH_LONG).show()
             }
-            //  R.id.layout_like ->{
+            //
             //    Toast.makeText(requireContext(), "Like Layout Clicked",Toast.LENGTH_LONG).show()
             //}
 
