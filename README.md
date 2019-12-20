@@ -64,7 +64,10 @@ Affichage de l'emplacement du pays selectionné dans maps
 - Api Rest (countryDb & json)
 - Nouvelle architecture (MVVM)
 
+## Aperçu:
 
-
-
-
+<img src="Screenshot_20191220-124701_Appkt1[1].jpg" width="200" height="400" />
+<img src="Screenshot_20191220-164512_Appkt1[2].jpg" width="200" height="400" />
+<img src="Screenshot_20191220-164517_Appkt1[1].jpg" width="200" height="400" />
+<img src="Screenshot_20191220-164539_Appkt1[1].jpg" width="200" height="400" />
+<img src="Screenshot_20191220-164600_Appkt1[1].jpg" width="200" height="400" />
